@@ -1,8 +1,33 @@
 <html>
     <head>
+        <style>
+            body{
+
+            background-image: url("https://images.unsplash.com/photo-1495811853829-7f743aca3770?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=953&q=80");
+            background-repeat: no-repeat;
+            background-position: left top;
+        
+            }
+            .login{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
         <h2>dit is een test</h2>
+
     </head>
     <body>
-        <p>test test teeest</p>
+        <div class="login">
+            <form id="login" method="POST">
+                <label for="username">Username</label>
+                <input required name="username" type="text" autocapitalize="off"></br>
+
+                <label for="password">Password</label>
+                <input class="password" required name="password" type="password"></br>
+                <button type="submit">Sign in</button>
+            </form>
+        </div>
+
     </body>
 </html>
